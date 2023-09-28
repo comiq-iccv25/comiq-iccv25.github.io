@@ -153,7 +153,10 @@
                                     <td>
                                         <button type="button" class="collapsible">SSL helps multimodal pretraining scale to more modalities and data
                                         </button>
-                                        <div class="collapsible_content"><p>TBD</p></div>
+                                        <div class="collapsible_content"><p>In this talk, I’ll show how self-supervised learning can be used to improve foundational multimodal models to scale to more modalities, learn better representations, and be more efficient.
+                                            A big challenge when training foundational multimodal models is the scarcity of paired data. While there is copious amounts of (image, text) data, other modalities such as depth or IMU have limited dataset sizes overall. Our first work in this direction called ImageBind shows that images can be used as a universal signal to “bind” multiple different modalities. We show that naturally co-occurring image pairings such as (image, IMU), (image, depth) can be automatically used to learn a share embedding space where unseen pairs of modalities are aligned. ImageBind enables emergent zero-shot recognition, cross-modal retrieval and generation.
+                                            Our second work shows that using self-supervised learning as a “pre” pre-training stage improves multimodal (image, text) representations across a wide range of model sizes and data sizes. Pre pre-training improves the performance of foundational models with billions of parameters trained on billions of images while also speeding up their convergence. The resulting models show state-of-the-art performance for full finetuning, linear probing, zero-shot recognition tasks in image and video domains.
+                                            </p></div>
                                     </td>
                                 </tr>
                                 
