@@ -23,7 +23,7 @@
 }
 
 /* Full Page Background */
-body {
+	body {
     background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('images/background2.png');
     background-size: cover;
     background-position: center;
@@ -42,15 +42,15 @@ body {
 }
 
 /* Enhanced Typography */
-body, input, select, textarea {
+	body, input, select, textarea {
     font-family: 'Inter', 'Source Sans Pro', sans-serif;
-    font-weight: 400;
+		font-weight: 400;
     line-height: 1.7;
     color: var(--text-color);
     letter-spacing: -0.01em;
-}
+		}
 
-h1, h2, h3, h4, h5, h6 {
+	h1, h2, h3, h4, h5, h6 {
     font-family: 'Inter', 'Source Sans Pro', sans-serif;
     font-weight: 600;
     line-height: 1.3;
@@ -96,15 +96,15 @@ h3 {
 
 /* Enhanced Header - Remove duplicate background since body now has it */
 #header {
-    position: relative;
+		position: relative;
     overflow: hidden;
     background: none !important;
 }
 
 #header::before {
-    content: '';
-    position: absolute;
-    top: 0;
+				content: '';
+				position: absolute;
+				top: 0;
     left: 0;
     right: 0;
     bottom: 0;
@@ -113,14 +113,14 @@ h3 {
 }
 
 #header .bgimg {
-    position: relative;
+		position: relative;
     z-index: 2;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
-}
+				text-align: center;
+			}
 
 #header h1, #header h2, #header h3 {
     color: white !important;
@@ -135,7 +135,7 @@ h3 {
     border-radius: var(--border-radius);
     margin: 2rem 0;
     padding: 1rem;
-    text-align: center;
+				text-align: center;
 }
 
 #nav ul {
@@ -166,8 +166,8 @@ h3 {
     text-decoration: none;
     font-weight: 500;
     transition: var(--transition);
-    border-radius: 8px;
-    display: inline-block;
+		border-radius: 8px;
+		display: inline-block;
     white-space: nowrap;
 }
 
@@ -178,12 +178,12 @@ h3 {
 }
 
 #nav ul li a::after {
-    content: '';
+			content: '';
     position: absolute;
     bottom: 0;
     left: 50%;
     width: 0;
-    height: 2px;
+				height: 2px;
     background: var(--secondary-color);
     transition: var(--transition);
     transform: translateX(-50%);
@@ -202,7 +202,7 @@ h3 {
     
     #nav ul li {
         width: auto;
-        text-align: center;
+			text-align: center;
         margin: 0.25rem 0;
     }
     
@@ -213,8 +213,8 @@ h3 {
 }
 
 /* Enhanced Tables */
-table {
-    width: 100%;
+	table {
+		width: 100%;
     border-collapse: separate;
     border-spacing: 0;
     background: rgba(255, 255, 255, 0.95);
@@ -222,9 +222,9 @@ table {
     border-radius: var(--border-radius);
     overflow: hidden;
     box-shadow: var(--box-shadow);
-}
+		}
 
-table td {
+		table td {
     padding: 1.5rem;
     text-align: center;
     border-bottom: 1px solid rgba(0,0,0,0.05);
@@ -234,6 +234,204 @@ table td {
 table td:hover {
     background: rgba(248, 249, 250, 0.8);
     transform: scale(1.02);
+}
+
+/* Responsive Speakers Section */
+.speakers-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.speaker-item {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    padding: 1.5rem;
+    text-align: center;
+    transition: var(--transition);
+}
+
+.speaker-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 35px rgba(0,0,0,0.2);
+}
+
+/* Responsive Organizers Section */
+.organizers-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.organizer-item {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    padding: 1.5rem;
+    text-align: center;
+    transition: var(--transition);
+}
+
+.organizer-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 35px rgba(0,0,0,0.2);
+}
+
+/* Legacy table CSS for schedule and other tables */
+#speakers .table-wrapper table {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    background: none;
+    box-shadow: none;
+    border-radius: 0;
+}
+
+#speakers .table-wrapper table tr {
+    display: contents;
+}
+
+#speakers .table-wrapper table td {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    border: none;
+    padding: 1.5rem;
+    transition: var(--transition);
+}
+
+#speakers .table-wrapper table td:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 35px rgba(0,0,0,0.2);
+}
+
+#info .table-wrapper table {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 1.5rem;
+    background: none;
+    box-shadow: none;
+    border-radius: 0;
+}
+
+#info .table-wrapper table tr {
+    display: contents;
+}
+
+#info .table-wrapper table td {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    border: none;
+    padding: 1.5rem;
+    transition: var(--transition);
+}
+
+#info .table-wrapper table td:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 35px rgba(0,0,0,0.2);
+}
+
+/* Medium Screens (Tablets) */
+@media screen and (max-width: 1024px) {
+    /* Organizers: 2x3 (2 columns, 3 rows) on medium screens */
+    .organizers-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.25rem;
+    }
+    
+    #info .table-wrapper table {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 1.25rem;
+    }
+}
+
+/* Mobile Responsive Layouts */
+@media screen and (max-width: 768px) {
+    /* Speakers: 2x2 grid on mobile */
+    .speakers-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+    
+    /* Organizers: 3x2 (3 columns, 2 rows) on smartphones */
+    .organizers-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+    
+    /* Adjust padding for mobile */
+    .speaker-item,
+    .organizer-item {
+        padding: 1rem;
+    }
+    
+    #speakers .table-wrapper table {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 1rem;
+    }
+    
+    #info .table-wrapper table {
+        grid-template-columns: repeat(3, 1fr) !important;
+        gap: 1rem;
+    }
+    
+    /* Adjust table cell padding for mobile */
+    #speakers .table-wrapper table td,
+    #info .table-wrapper table td {
+        padding: 1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /* Very small screens */
+    .speakers-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.75rem;
+    }
+    
+    .organizers-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.75rem;
+    }
+    
+    .speaker-item,
+    .organizer-item {
+        padding: 0.75rem;
+        font-size: 0.9rem;
+    }
+    
+    #speakers .table-wrapper table {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 0.75rem;
+    }
+    
+    #info .table-wrapper table {
+        grid-template-columns: repeat(3, 1fr) !important;
+        gap: 0.75rem;
+    }
+    
+    #speakers .table-wrapper table td,
+    #info .table-wrapper table td {
+        padding: 0.75rem;
+        font-size: 0.9rem;
+    }
+    
+    /* Make images smaller on very small screens */
+    .speakers-grid .rounded-img-dark,
+    .organizers-grid .rounded-img-dark,
+    #speakers .rounded-img-dark,
+    #info .rounded-img-dark {
+        width: 80px !important;
+        height: 80px !important;
+    }
 }
 
 /* Enhanced Image Styling */
@@ -258,9 +456,9 @@ table td:hover {
     color: white;
     cursor: pointer;
     padding: 12px 20px;
-    width: 100%;
+				width: 100%;
     border: none;
-    text-align: center;
+			text-align: center;
     outline: none;
     font-size: 15px;
     font-weight: 500;
@@ -287,7 +485,7 @@ table td:hover {
 }
 
 /* Enhanced Spotlight */
-.spotlight {
+	.spotlight {
     background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(10px);
     border-radius: var(--border-radius);
@@ -326,8 +524,8 @@ a::after {
 }
 
 a:hover::after {
-    width: 100%;
-}
+					width: 100%;
+				}
 
 /* Enhanced List Styling */
 ul {
@@ -354,7 +552,7 @@ ul li::before {
     background: rgba(26, 37, 47, 0.95);
     backdrop-filter: blur(15px);
     color: white;
-    text-align: center;
+		text-align: center;
     padding: 2rem;
     border-radius: var(--border-radius) var(--border-radius) 0 0;
     margin-top: 2rem;
@@ -398,7 +596,7 @@ ul li::before {
 /* Animation Enhancements */
 @keyframes fadeInUp {
     from {
-        opacity: 0;
+			opacity: 0;
         transform: translateY(20px);
     }
     to {
@@ -414,7 +612,7 @@ ul li::before {
 /* Enhanced Major Headers */
 .major h2 {
     position: relative;
-    display: inline-block;
+				display: inline-block;
     margin-bottom: 2rem;
 }
 
@@ -450,9 +648,9 @@ ul li::before {
 }
 
 #info .table-wrapper {
-    text-align: center;
-}
+			text-align: center;
+		}
 
 #info table {
-    margin: 0 auto;
-}
+		margin: 0 auto;
+	}
