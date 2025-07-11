@@ -1,0 +1,35 @@
+# Site settings
+title: "COMIQ: Comic Intelligence Quotient"
+description: "Advances and Challenges in AI-driven Comic Analysis"
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# SEO settings
+author: "COMIQ Workshop Organizers"
+twitter:
+  username: comiq_workshop
+  card: summary_large_image
+
+# GitHub Pages settings
+github:
+  is_project_page: false
+
+# Exclude files from processing
+exclude:
+  - README.md
+  - LICENSE
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/ 
