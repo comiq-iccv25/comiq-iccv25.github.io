@@ -611,12 +611,25 @@ a:hover {
     border-radius: 15px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
     text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: all 0.3s ease;
+    border: 3px solid transparent;
 }
 
 .organizer-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.organizer-card.dimmed {
+    opacity: 0.3;
+    transform: scale(0.95);
+}
+
+.organizer-card.highlighted {
+    border: 3px solid;
+    border-image: linear-gradient(135deg, #667eea, #764ba2) 1;
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 10px 30px rgba(102, 126, 234, 0.2);
 }
 
 .organizer-image {
@@ -631,11 +644,6 @@ a:hover {
 
 .organizer-image:hover {
     transform: scale(1.05);
-}
-
-.organizer-avatar {
-    font-size: 3rem;
-    margin-bottom: 1rem;
 }
 
 .organizer-card h4 {
@@ -659,6 +667,111 @@ a:hover {
     margin-bottom: 0.5rem;
     font-size: 0.95rem;
     line-height: 1.4;
+}
+
+/* University Partners Section - now within Organizers */
+.universities-section {
+    margin: 2rem 0 3rem 0;
+    padding: 1rem 0;
+}
+
+.universities-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding: 0.5rem 0;
+}
+
+.university-logos-combined {
+    display: flex;
+    gap: 0.5rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    padding: 0.5rem;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    flex: 0 0 auto;
+}
+
+.university-logos-combined:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.university-logos-combined.dimmed {
+    opacity: 0.3;
+    transform: scale(0.95);
+}
+
+.university-logos-combined.active {
+    box-shadow: 0 5px 25px rgba(102, 126, 234, 0.3);
+    transform: translateY(-5px) scale(1.05);
+}
+
+.university-logos-combined .university-logo {
+    background: transparent;
+    box-shadow: none;
+    padding: 0.5rem;
+    min-height: 80px;
+    min-width: 100px;
+    cursor: pointer;
+    pointer-events: none;
+}
+
+.university-logos-combined .university-logo:hover {
+    background: rgba(102, 126, 234, 0.05);
+    border-radius: 8px;
+    transform: none;
+}
+
+.university-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    min-height: 100px;
+    flex: 0 0 auto;
+    cursor: pointer;
+    min-width: 140px;
+}
+
+.university-logo:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.university-logo.dimmed {
+    opacity: 0.3;
+    transform: scale(0.95);
+}
+
+.university-logo.active {
+    box-shadow: 0 5px 25px rgba(102, 126, 234, 0.3);
+    transform: translateY(-5px) scale(1.05);
+}
+
+.logo-img {
+    max-width: 120px;
+    max-height: 60px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    filter: grayscale(0.2) opacity(0.9);
+    transition: filter 0.3s ease;
+}
+
+.logo-img:hover {
+    filter: grayscale(0) opacity(1);
 }
 
 /* Footer */
@@ -745,6 +858,37 @@ a:hover {
         gap: 1.5rem;
     }
     
+    .universities-grid {
+        gap: 0.8rem;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        overflow-x: auto;
+        padding: 0.5rem;
+    }
+    
+    .university-logos-combined {
+        gap: 0.3rem;
+        padding: 0.3rem;
+    }
+    
+    .university-logos-combined .university-logo {
+        padding: 0.4rem;
+        min-height: 70px;
+        min-width: 80px;
+    }
+    
+    .university-logo {
+        padding: 0.8rem;
+        min-height: 80px;
+        flex: 0 0 auto;
+        min-width: 120px;
+    }
+    
+    .logo-img {
+        max-width: 100px;
+        max-height: 50px;
+    }
+    
     /* Timeline responsive for call for papers */
     .timeline::before {
         left: 20px;
@@ -803,6 +947,37 @@ a:hover {
     .organizers-grid {
         grid-template-columns: 1fr;
         gap: 1rem;
+    }
+    
+    .universities-grid {
+        gap: 0.5rem;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        overflow-x: auto;
+        padding: 0.5rem;
+    }
+    
+    .university-logos-combined {
+        gap: 0.2rem;
+        padding: 0.2rem;
+    }
+    
+    .university-logos-combined .university-logo {
+        padding: 0.3rem;
+        min-height: 60px;
+        min-width: 70px;
+    }
+    
+    .university-logo {
+        padding: 0.6rem;
+        min-height: 70px;
+        flex: 0 0 auto;
+        min-width: 100px;
+    }
+    
+    .logo-img {
+        max-width: 80px;
+        max-height: 40px;
     }
     
     .schedule-item {

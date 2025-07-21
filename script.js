@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }, observerOptions);
     
     // Observe elements for animation
-    const animateElements = document.querySelectorAll('.feature, .speaker-card, .schedule-item, .timeline-item');
+    const animateElements = document.querySelectorAll('.feature, .speaker-card, .schedule-item, .timeline-item, .university-logo');
     animateElements.forEach(el => {
         el.style.opacity = '0';
         el.style.transform = 'translateY(20px)';
@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
     // Add loading animation delay for staggered effect
-    const cards = document.querySelectorAll('.feature, .speaker-card');
+    const cards = document.querySelectorAll('.feature, .speaker-card, .university-logo');
     cards.forEach((card, index) => {
         card.style.transitionDelay = `${index * 0.1}s`;
     });
@@ -136,6 +136,58 @@ function toggleAbstract(button) {
         abstractContent.style.display = 'block';
         button.textContent = 'Collapse Abstract';
     }
+}
+
+// Function to filter organizers by university
+let currentFilter = null;
+
+function filterByUniversity(university) {
+    const universityLogos = document.querySelectorAll('.university-logo');
+    const organizerCards = document.querySelectorAll('.organizer-card');
+    
+    // If clicking the same university, reset filter
+    if (currentFilter === university) {
+        currentFilter = null;
+        
+        // Reset all logos
+        universityLogos.forEach(logo => {
+            logo.classList.remove('dimmed', 'active');
+        });
+        
+        // Reset all organizer cards
+        organizerCards.forEach(card => {
+            card.classList.remove('dimmed', 'highlighted');
+        });
+        
+        return;
+    }
+    
+    // Set new filter
+    currentFilter = university;
+    
+    // Update university logos
+    universityLogos.forEach(logo => {
+        const logoUniversity = logo.getAttribute('data-university');
+        if (logoUniversity === university) {
+            logo.classList.remove('dimmed');
+            logo.classList.add('active');
+        } else {
+            logo.classList.remove('active');
+            logo.classList.add('dimmed');
+        }
+    });
+    
+    // Update organizer cards
+    organizerCards.forEach(card => {
+        const cardUniversities = card.getAttribute('data-university').split(' ');
+        if (cardUniversities.includes(university)) {
+            card.classList.remove('dimmed');
+            card.classList.add('highlighted');
+        } else {
+            card.classList.remove('highlighted');
+            card.classList.add('dimmed');
+        }
+    });
 }
 
 // Add CSS for ripple effect

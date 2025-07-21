@@ -232,33 +232,57 @@
         <section id="organizers" class="section">
             <div class="container">
                 <h2 class="section-title">Organizers</h2>
+                
+                <div class="universities-section">
+                    <div class="universities-grid">
+                        <div class="university-logos-combined" data-university="cvc_uab" onclick="filterByUniversity('cvc_uab')">
+                            <div class="university-logo" data-university="cvc">
+                                <img src="uni/cvc_or.png" alt="Computer Vision Center" class="logo-img">
+                            </div>
+                            <div class="university-logo" data-university="uab">
+                                <img src="uni/uab_or.png" alt="Autonomous University of Barcelona" class="logo-img">
+                            </div>
+                        </div>
+                        <div class="university-logo" data-university="oxford" onclick="filterByUniversity('oxford')">
+                            <img src="uni/oxford_or.png" alt="University of Oxford" class="logo-img">
+                        </div>
+                        <div class="university-logo" data-university="unifi" onclick="filterByUniversity('unifi')">
+                            <img src="uni/unifi-micc_or.jpg" alt="University of Florence - MICC" class="logo-img">
+                        </div>
+                        <div class="university-logo" data-university="bath" onclick="filterByUniversity('bath')">
+                            <img src="uni/bath_or.svg" alt="University of Bath" class="logo-img">
+                        </div>
+                    </div>
+                </div>
+                
                 <div class="organizers-grid">
-                    <div class="organizer-card">
+                    <div class="organizer-card" data-university="unifi cvc_uab">
                         <img class="organizer-image" src="images/ev.jpg" alt="Emanuele Vivoli">
                         <h4><a href="https://emanuelevivoli.github.io/">Emanuele Vivoli</a></h4>
-                        <p>CVC - UAB & MICC - UniFi</p>
+                        <p>Autonomous University of Barcelona</p>
+                        <p>University of Florence</p>
                     </div>
-                    <div class="organizer-card">
+                    <div class="organizer-card" data-university="oxford">
                         <img class="organizer-image" src="images/rs.png" alt="Ragav Sachdeva">
                         <h4><a href="https://ragavsachdeva.github.io/">Ragav Sachdeva</a></h4>
                         <p>University of Oxford</p>
                     </div>
-                    <div class="organizer-card">
+                    <div class="organizer-card" data-university="cvc_uab">
                         <img class="organizer-image" src="images/al.webp" alt="Artemis Llabrés">
                         <h4><a href="https://scholar.google.com/citations?user=0VToXYcAAAAJ&hl=en">Artemis Llabrés</a></h4>
                         <p>Autonomous University of Barcelona</p>
                     </div>
-                    <div class="organizer-card">
+                    <div class="organizer-card" data-university="bath">
                         <img class="organizer-image" src="images/db.png" alt="Deblina Bhattacharjee">
                         <h4>Deblina Bhattacharjee</h4>
                         <p>University of Bath</p>
                     </div>
-                    <div class="organizer-card">
+                    <div class="organizer-card" data-university="cvc_uab">
                         <img class="organizer-image" src="images/dk.jpeg" alt="Dimosthenis Karatzas">
                         <h4><a href="https://pages.cvc.uab.es/dimos/">Dimosthenis Karatzas</a></h4>
                         <p>Autonomous University of Barcelona</p>
                     </div>
-                    <div class="organizer-card">
+                    <div class="organizer-card" data-university="oxford">
                         <img class="organizer-image" src="images/az.jpeg" alt="Andrew Zisserman">
                         <h4><a href="http://www.robots.ox.ac.uk/~az">Andrew Zisserman</a></h4>
                         <p>University of Oxford</p>
