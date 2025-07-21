@@ -1,0 +1,321 @@
+<!DOCTYPE HTML>
+<!--
+	Stellar by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+<head>
+	<link rel="shortcut icon" type="image/png" href="comiq.png">
+		<title>COMIQ: Comic Intelligence Quotient - ICCV 2025</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+
+    <meta property='og:title' content="🎨COMIQ: Comic Intelligence Quotient - Advances and Challenges in AI-driven Comic Analysis - ICCV 2025"/>
+	</head>
+	<body>
+		<!-- Wrapper -->
+        <div id = "wrapper">
+            <!-- Header-->
+            <header id="header" class = "alt" style = "width: 100%; background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('images/background2.png'); background-size: cover; background-position: center;">
+                <!-- <div class = "bgimg" style = "height: 475px">-->
+                <div class = "bgimg" style = "height: 280px; width: 100%">
+                  <div style = "height: 30px; width: 100%"></div>
+                  <h1 style = "background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); color: white !important; text-shadow: 1px 1px 2px rgba(0,0,0,0.3); padding: 15px 30px; border-radius: 12px; display: inline-block; font-weight: 300; -webkit-text-fill-color: white; -webkit-background-clip: border-box;">COMIQ: Comic Intelligence Quotient</h1>
+                  <h2 style = "text-shadow: 2px 2px 4px rgba(0,0,0,0.8); color: white; font-weight: 300;">Advances and Challenges in AI-driven Comic Analysis</h2>
+                  <h3 style = "text-shadow: 2px 2px 4px rgba(0,0,0,0.8); color: white; font-weight: 300;">ICCV 2025 - October 19th</h3>
+                </div>
+            </header>
+
+            <!-- Main -->
+            <div id="main">
+                <!-- Nav -->
+                <nav id="nav">
+                    <ul>
+                        <li><a href="#intro" class="active">Introduction</a></li>
+                        <li><a href="#format">Format</a></li>
+                        <li><a href="#challenge">Challenge</a></li>
+                        <li><a href="#schedule">Schedule</a></li>
+                        <li><a href="#speakers">Speakers</a></li>
+                        <li><a href="#info">Organizers</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Introduction -->
+                <section id="intro" class="main">
+                    <header class="major" style="text-align:center">
+                        <h2>Summary</h2>
+                    </header>
+                    <div class="spotlight" style="width: 80%; margin: auto;">
+                        <div class="content">
+                            <p>
+                                Comics are a uniquely compelling visual storytelling medium, blending images and text to convey intricate narratives. Unlike other visual media such as photographs or videos, comics rely on discrete panels, stylized characters, and implicit transitions that require readers to infer context and causality. The interplay between visual elements, speech bubbles, and captions enables rich, multimodal communication, making comics both a fascinating artistic domain and a challenging testbed for AI.
+                            </p>
+                            <p>
+                                Despite rapid progress in vision-language models, AI systems continue to struggle with comic understanding. Unlike natural images, which depict real-world scenes, or structured documents, which follow rigid layouts, comics present highly abstract and diverse representations. Tasks such as panel sequencing, entity tracking, and cross-panel reasoning remain difficult for even state-of-the-art models. Current approaches often fail to handle the complexities of character consistency across panels, implicit storytelling gaps, and multimodal fusions of text and imagery.
+                            </p>
+                            <p>
+                                This workshop will bring together researchers from computer vision, cognitive science, and multimedia analysis to advance AI-driven comic understanding. Through invited talks, discussions, and presentations, we will explore new methodologies for multimodal reasoning, self-supervised learning, and dataset curation. A central component of the workshop will be the <strong>Comics Visual Question Answering (CVQA) Challenge</strong>, which introduces a benchmark for evaluating AI comprehension of comics.
+                            </p>
+                            <p>
+                                <strong>Workshop Topics:</strong>
+                                <ul style="padding-left:40px;">
+                                    <li>Multimodal reasoning in sequential visual narratives</li>
+                                    <li>Cross-panel entity tracking and co-reference resolution</li>
+                                    <li>Self-supervised learning for comic understanding</li>
+                                    <li>Dataset curation and benchmark development for comics</li>
+                                    <li>Visual language understanding in stylized domains</li>
+                                    <li>Accessibility and automatic comic description</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="format" class="main">
+                    <header class="major" style="text-align:center">
+                        <h2>Format</h2>
+                    </header>
+                    <div class="spotlight" style="width: 80%; margin: auto;">
+                        <div class="content">
+                            <p>
+                                The workshop is a half-day event featuring a series of invited talks from leading experts in comics understanding, multimodal AI, and cognitive science. The workshop will also host the Comics Visual Question Answering (CVQA) Challenge, where participants will present their results, followed by a panel discussion to foster interdisciplinary dialogue and explore future research directions.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="challenge" class="main">
+                    <header class="major" style="text-align:center">
+                        <h2>Comics VQA Challenge</h2>
+                    </header>
+                    <div class="spotlight" style="width: 80%; margin: auto;">
+                        <div class="content">
+                            <p>
+                                The <strong>Comics VQA (CVQA) Challenge</strong> is a benchmark competition designed to evaluate how well AI models understand comics. Unlike traditional visual question answering (VQA) tasks focused on static images or structured documents, CVQA introduces a <em>multi-page, multimodal reasoning challenge</em>, requiring models to integrate textual and visual information across sequential narratives.
+                            </p>
+                            <p>
+                                <strong>Challenge Components:</strong>
+                                <ul style="padding-left:40px;">
+                                    <li><strong>Entity and co-reference resolution:</strong> Identifying recurring characters, objects, and concepts across panels</li>
+                                    <li><strong>Sequential and temporal reasoning:</strong> Understanding event flow across multiple pages</li>
+                                    <li><strong>Visual and textual integration:</strong> Fusing speech bubbles, captions, and imagery to extract meaning</li>
+                                    <li><strong>Implicit context and external knowledge:</strong> Interpreting jokes, metaphors, and cultural references</li>
+                                    <li><strong>Information retrieval and validation:</strong> Extracting specific details such as timestamps, locations, or attributes</li>
+                                </ul>
+                            </p>
+                            <p>
+                                <strong>Competition Timeline:</strong>
+                                <ul style="padding-left:40px;">
+                                    <li><strong>Late July 2025:</strong> Competition server goes live with public test set</li>
+                                    <li><strong>October 3rd, 2025:</strong> Submission deadline for leaderboard ranking</li>
+                                    <li><strong>October 10th, 2025:</strong> Private test set evaluation and final rankings announcement</li>
+                                    <li><strong>October 19th, 2025:</strong> Winner presentations at ICCV 2025 workshop</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="schedule" class="main special">
+                    <header class="major" style="text-align:center">
+                        <h2>Schedule</h2>
+                    </header>
+                    <p>The workshop will take place on October 19th, 2025 (half-day). Exact location and times will be announced.</p>
+
+                    <div class="table-wrapper" style="width:100%">
+                        <table class="alt">
+                            <tbody>
+                                <col width="20%">
+                                <col width="25%">
+                                <col width="60%">
+                                
+                                <tr>
+                                    <td>09:00-09:10</td>
+                                    <td>Opening Remarks</td>
+                                    <td>
+                                        <div>Introduction to the workshop, its themes, and objectives. Overview of comics understanding past works.</div>
+                                    </td>
+                                </tr>
+                                
+                                <tr>
+                                    <td>09:10-09:40</td>
+                                    <td>Dr. Neil Cohn</td>
+                                    <td>
+                                        <button type="button" class="collapsible">Visual Languages in Comics</button>
+                                        <div class="collapsible_content"><p>A cognitive scientist, comics theorist, and comics writer/artist who explores how people comprehend sequential images and the unique structures of comics. His talk will provide foundational insights into visual languages specific to comics, enriching computational perspectives with cognitive and artistic elements.</p></div>
+                                    </td>
+                                </tr>
+                                
+                                <tr>
+                                    <td>09:40-10:10</td>
+                                    <td>Prof. Zeynep Akata</td>
+                                    <td>
+                                        <button type="button" class="collapsible">Multimodal Representations for Comics</button>
+                                        <div class="collapsible_content"><p>Leading researcher in multimodal representations, explainable AI, and sketch-based retrieval. Her expertise in developing models that bridge different modalities will be crucial in addressing the challenges posed by comic structures, particularly in understanding complex panel layouts and narrative sequences.</p></div>
+                                    </td>
+                                </tr>
+                                
+                                <tr>
+                                    <td>10:10-11:10</td>
+                                    <td>Comics VQA Challenge</td>
+                                    <td>
+                                        <div>
+                                            <strong>Challenge Overview</strong><br>
+                                            <strong>Presentations from winners</strong>
+                                        </div>
+                                    </td>
+                                </tr>
+                                
+                                <tr>
+                                    <td>11:10-11:30</td>
+                                    <td></td>
+                                    <td>Break / Informal Discussions</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td>11:30-12:00</td>
+                                    <td>Prof. Kiyoharu Aizawa</td>
+                                    <td>
+                                        <button type="button" class="collapsible">Manga Analysis and Benchmarks</button>
+                                        <div class="collapsible_content"><p>Expert in manga-style comic analysis and creator of the influential Manga109 dataset. A pioneering researcher in manga-style comics for classical computer vision tasks. He will discuss the evolution of comic dataset creation, the challenges associated with it, and future research directions leveraging multimodal foundation models.</p></div>
+                                    </td>
+                                </tr>
+                                
+                                <tr>
+                                    <td>12:00-12:30</td>
+                                    <td>Prof. Yuki M. Asano</td>
+                                    <td>
+                                        <button type="button" class="collapsible">Self-supervised Learning for Comics</button>
+                                        <div class="collapsible_content"><p>Specialist in multimodal learning and self-supervised methods. His expertise in unsupervised learning methods will be instrumental in developing scalable approaches to extract meaningful representations from unlabelled comic data. His presentation will highlight novel self-supervised learning methodologies aimed at overcoming annotation challenges.</p></div>
+                                    </td>
+                                </tr>
+                                
+                                <tr>
+                                    <td>12:30-13:00</td>
+                                    <td>Panel Q&A and Closing Remarks</td>
+                                    <td>
+                                        <div>A chance for the audience to engage with presenters through a Q&A session</div>
+                                    </td>
+                                </tr>
+                                
+                            </tbody>
+                        </table>
+                    </div>                    
+                </section>
+
+                <section id="speakers" class="main special">
+                    <header class="major" style="text-align:center">
+                        <h2>Invited Speakers</h2>
+                    </header>
+                    <div class="speakers-grid">
+                        <div class="speaker-item">
+                            <img class="rounded-img-dark" height="125px" src="https://via.placeholder.com/125x125/667eea/ffffff?text=NC">
+                            <br><a href="https://www.visuallanguagelab.com/neilcohn">Dr. Neil Cohn<br>Visual Language Lab</a>
+                        </div>
+                        <div class="speaker-item">
+                            <img class="rounded-img-dark" height="125px" src="https://via.placeholder.com/125x125/764ba2/ffffff?text=ZA">
+                            <br><a href="https://www.mpi-inf.mpg.de/departments/computer-vision-and-machine-learning/people/zeynep-akata">Prof. Zeynep Akata<br>MPI for Informatics</a>
+                        </div>
+                        <div class="speaker-item">
+                            <img class="rounded-img-dark" height="125px" src="https://via.placeholder.com/125x125/667eea/ffffff?text=KA">
+                            <br><a href="https://www.ee.t.u-tokyo.ac.jp/en/staff/aizawa-kiyoharu/">Prof. Kiyoharu Aizawa<br>University of Tokyo</a>
+                        </div>
+                        <div class="speaker-item">
+                            <img class="rounded-img-dark" height="125px" src="https://via.placeholder.com/125x125/764ba2/ffffff?text=YA">
+                            <br><a href="https://yukimasano.github.io/">Prof. Yuki M. Asano<br>University of Amsterdam</a>
+                        </div>
+                    </div>
+                </section>
+						
+                <section id="info" class="main special">
+                    <header class="major">
+                        <h2>Organizers</h2>
+                    </header>
+                    <div class="organizers-grid">
+                        <div class="organizer-item">
+                            <img class="rounded-img-dark" height="125px" src="images/ev.jpg">
+                            <br><a href="https://emanuelevivoli.github.io/">Emanuele Vivoli<br>CVC - UAB & MICC - UniFi</a>
+                        </div>
+                        <div class="organizer-item">
+                            <img class="rounded-img-dark" height="125px" src="images/rs.png">
+                            <br><a href="https://ragavsachdeva.github.io/">Ragav Sachdeva<br>University of Oxford</a>
+                        </div>
+                        <div class="organizer-item">
+                            <img class="rounded-img-dark" height="125px" src="images/al.webp">
+                            <br><a href="https://scholar.google.com/citations?user=0VToXYcAAAAJ&hl=en">Artemis Llabrés<br>Autonomous University of Barcelona</a>
+                        </div>
+                        <div class="organizer-item">
+                            <img class="rounded-img-dark" height="125px" src="images/db.png">
+                            <br>Deblina Bhattacharjee<br>University of Bath
+                        </div>
+                        <div class="organizer-item">
+                            <img class="rounded-img-dark" height="125px" src="images/dk.jpeg">
+                            <br><a href="https://pages.cvc.uab.es/dimos/">Dimosthenis Karatzas<br>Autonomous University of Barcelona</a>
+                        </div>
+                        <div class="organizer-item">
+                            <img class="rounded-img-dark" height="125px" src="images/az.jpeg">
+                            <br><a href="http://www.robots.ox.ac.uk/~az">Andrew Zisserman<br>University of Oxford</a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+                 
+            <!-- Footer -->
+            <footer id="footer">
+                <p style="font-size:medium; margin-top: 1rem;">
+                    Contact us at <a href="mailto:comics@cvc.uab.cat?subject=ComIQ%20workshop%20-%20%3Creason%20of%20email%3E">comics@cvc.uab.cat</a>
+                </p>
+            </footer>
+			</div>
+
+		<!-- Scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.scrollex.min.js"></script>
+        <script src="assets/js/jquery.scrolly.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <!--[if lte IE 8]>
+        <script src="assets/js/ie/respond.min.js"></script><![endif]-->
+        <script src="assets/js/main.js"></script>
+    <script>
+      function convertDateAndTimezone(timeStr) {
+        var newDate = new Date("2020-08-28T"+timeStr+":00.000Z");
+        return newDate.toString();   
+      }
+      
+	    function convertTime(timeStr) {
+        var newDate = new Date("2020-08-28T"+timeStr+":00.000Z");
+        return newDate.toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'});   
+      }
+      
+      function convertTimeRange(rangeStr) {
+        var s = rangeStr.split('-')
+        return convertTime(s[0]) + ' - ' + convertTime(s[1]);   
+      }
+      
+      $( document ).ready(function() {
+        $( ".convertTime" ).each(function( index ) {
+          $(this).text(convertTime($(this).text()));
+        });
+
+        $( ".convertDate" ).each(function( index ) {
+          $(this).text(convertDateAndTimezone($(this).text()));
+        });
+
+        $( ".convertTimeRange" ).each(function( index ) {
+          $(this).text(convertTimeRange($(this).text()));
+        });
+        
+        $( ".collapsible" ).click(function() {
+            $(this).toggleClass("active");
+            $(this).next().toggle();
+        });
+      });
+	  </script>
+	</body>
+</html>
