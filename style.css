@@ -596,6 +596,19 @@ a:hover {
     color: #667eea;
 }
 
+.scholar-link {
+    color: #4285f4;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.scholar-link:hover {
+    color: #1a73e8;
+    text-decoration: underline;
+}
+
 /* Organizers Section */
 .organizers-grid {
     display: grid;
